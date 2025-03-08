@@ -9,7 +9,7 @@ int main() {
     //Primeiro pego as informações da primeira carta.
     printf("Desafio cadastro de cartas Super Trunfo!\n\n");
     printf("Dados para primeira carta:\n");
-    printf("Digite a letra que representa o Estado da carta: \n");
+    printf("Digite a letra que representa o Estado da primeira carta: \n");
     scanf(" %c", &estado);
 
     printf("Código da primeira carta: \n");
@@ -32,10 +32,10 @@ int main() {
 
     //Agora pego as informações da segunda carta.
     printf("\nDados para segunda carta:\n");
-    printf("Digite a letra que representa o Estado da carta: \n");
+    printf("Digite a letra que representa o Estado da segunda carta: \n");
     scanf(" %c", &estado2);
 
-    printf("Código da primeira carta: \n");
+    printf("Código da segunda carta: \n");
     scanf(" %s", codigo2);
 
     printf("Digite o nome da cidade: \n");
