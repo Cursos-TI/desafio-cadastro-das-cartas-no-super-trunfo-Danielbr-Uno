@@ -2,12 +2,20 @@
 
 int main() {
     //Fiz a criação de todas as variáveis, para que sejam apresentadas as duas cartas de uma vez.
-    char codigo[5], estado, cidade[20], codigo2[5], estado2, cidade2[20];
+    char *codigo[10], estado, *cidade[20], *codigo2[10], estado2, *cidade2[20];
     unsigned int populacao, populacao2;
     int turismo, turismo2;
     float area, area2, densiPop, densiPop2, pib, pib2, inverDensiPop, inverDensiPop2, pibB, pibB2; 
     double pibPerCap, pibPerCap2;
     long double superPoder, superPoder2;
+    //Pré selecionando valores das cartas para não ser preciso cadastrá-las.
+    codigo[5] = "A01";    codigo2[5] = "B02";
+    estado = 'A';         estado2 = 'B';
+    cidade[5] = "SP";    cidade2[5] = "RJ";
+    populacao = 12325000; populacao2 = 6748000;
+    turismo = 30;         turismo2 = 30;
+    area = 1521.11;       area2 = 1600.25;
+    pib = 699.28;         pib2 = 300.50;
     //Abaixo foram criadas variaveis para que possa ser dado o resultado das comparações entre as duas cartas.
     //int rPop, rArea, rPIB, rTur, rDP, rPPC, rSP;
 
@@ -94,9 +102,9 @@ int main() {
 */
     
     printf("\nCarta número 1: \n");
-    printf("Código: %s \n", codigo);
+    printf("Código: %s \n", codigo[5]);
     printf("Estado: %c \n", estado);
-    printf("Cidade: %s \n", cidade);
+    printf("Cidade: %s \n", cidade[5]);
     printf("População: %u habitantes \n", populacao);
     printf("Número de pontos turísticos: %d locais \n", turismo);
     printf("Área: %.2f km² \n", area);
@@ -106,9 +114,9 @@ int main() {
     printf("Super poder: %.2Lf \n\n", superPoder);
 
     printf("\nCarta número 2: \n");
-    printf("Código: %s \n", codigo2);
+    printf("Código: %s \n", codigo2[5]);
     printf("Estado: %c \n", estado2);
-    printf("Cidade: %s \n", cidade2);
+    printf("Cidade: %s \n", cidade2[5]);
     printf("População: %u habitantes \n", populacao2);
     printf("Número de pontos turísticos: %d locais \n", turismo2);
     printf("Área: %.2f km² \n", area2);
@@ -158,6 +166,5 @@ int main() {
 */
     
     // Duelo de cartas utilizando estrutura switch e estruturas encadeadas, que possibilitam o usuário interagir com mais facilidade.
-    
     return 0;
 }
