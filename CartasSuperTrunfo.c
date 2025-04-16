@@ -108,17 +108,45 @@ int main() {
     printf("Área: %.2f km² \n", area2);
     printf("PIB: R$ %.2f bilhões \n", pib2);
     printf("Densidade populacional: %.2f hab/km² \n", densiPop2);
-    printf("PIB per capta: %.2f reais \n", pibPerCap2);
+    printf("PIB per capta: %.2f reais por habitante \n", pibPerCap2);
     printf("Super poder: %.2Lf \n\n", superPoder2);
 
-    printf("Duelo de cartas: \n");
-    printf("População: %d\n", rPop);
-    printf("Área: %d\n", rArea);
-    printf("PIB: %d\n", rPIB);
-    printf("Pontos turísticos: %d\n", rTur);
-    printf("Densidade populacional: %d\n", rDP);
-    printf("PIB per capta: %d\n", rPPC);
-    printf("Super poder: %d\n", rSP);
+    printf("\nDuelo de cartas: \n");
+    if(populacao > populacao2){
+        printf("Carta 1(%s) venceu com %u habitantes!\n", cidade, populacao);
+    } else {
+        printf("Carta 2(%s) venceu com %u de habitantes!\n", cidade2, populacao2);
+    }
+    if(area > area2){
+        printf("Carta 1(%s) venceu com %.2f km² de área!\n", cidade, area);
+    } else {
+        printf("Carta 2(%s) venceu com %.2f km² de área!\n", cidade2, area2);
+    }
+    if(pib > pib2){
+        printf("Carta 1(%s) venceu com %.2f bilhões de reais no PIB!\n", cidade, pib);
+    } else {
+        printf("Carta 2(%s) venceu com %.2f bilhões de reais no PIB!\n", cidade2, pib2);
+    }
+    if(turismo > turismo2){
+        printf("Carta 1(%s) venceu com %d pontos turísticos!\n", cidade, turismo);
+    } else {
+        printf("Carta 2(%s) venceu com %d pontos turísticos!\n", cidade2, turismo2);
+    }
+    if(densiPop < densiPop2){
+        printf("Carta 1(%s) venceu com %.2f de habitantes por km²!\n", cidade, densiPop);
+    } else {
+        printf("Carta 2(%s) venceu com %.2f de habitantes por km²!\n", cidade2, densiPop2);
+    }
+    if(pibPerCap > pibPerCap2){
+        printf("Carta 1(%s) venceu com %.2f reais por habitante!\n", cidade, pibPerCap);
+    } else {
+        printf("Carta 2(%s) venceu com %.2f reais por habitante!\n", cidade2, pibPerCap2);
+    }
+    if(superPoder > superPoder2){
+        printf("Carta 1(%s) venceu com %.2Lf pontos!\n", cidade, superPoder);
+    } else {
+        printf("Carta 2(%s) venceu com %.2Lf pontos!\n", cidade2, superPoder2);
+    }
 
     return 0;
 }
